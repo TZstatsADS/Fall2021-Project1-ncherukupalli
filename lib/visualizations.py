@@ -9,9 +9,9 @@ from wordcloud import WordCloud
 
 def display_wordcloud(data, title=None, save_fig_path=None):
     """ Displays wordcloud highlighting words appearing frequently.
-    :param data (list-like): Contains strings of words/sentences.
-    :param title (str): Title of wordcloud
-    :param save_fig_path (str): Path to save file
+    :param (list-like) data: Contains strings of words/sentences.
+    :param (str) title: Title of wordcloud
+    :param (str) save_fig_path: Path to save file
     """
     # Build figure
     cloud = WordCloud(background_color='white',
@@ -35,8 +35,8 @@ def display_wordcloud(data, title=None, save_fig_path=None):
 def display_elbow_chart(lst_inertia, save_fig_path=None):
     """ Displays line chart of model inertias. Useful for KMeans to find
         the optimal k.
-    :param lst_inertia ([float]): Model inertia results
-    :param save_fig_path (str): Path to save file
+    :param ([float]) lst_inertia: Model inertia results
+    :param (str) save_fig_path: Path to save file
     :return:
     """
     # Build figure
@@ -44,7 +44,6 @@ def display_elbow_chart(lst_inertia, save_fig_path=None):
     plt.plot(list(range(1, len(lst_inertia) + 1)),
              lst_inertia,
              "kx-")
-
     plt.xlabel("# of Clusters")
     plt.ylabel("Inertia")
     plt.grid()

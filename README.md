@@ -2,19 +2,28 @@
 ## Fall 2021
 ## Project 1: A "data story" on the history of philosophy
 
-<img src="figs/100126-the-glass.jpeg" width="500">
 
-### [Project Description](doc/)
-This is the first and only *individual* (as opposed to *team*) project this semester. 
+### [Project Description]
 
 Term: Fall 2021
++ Project Title: Clustering/Classification of Philosophical Texts
++ Author: Nikhil Cherukupalli
++ Project summary: This project aims to study clustering/classification problems in a dataset
+consisting of philosophy texts to better understand the texts' dependencies
+on philosophers and philosophical schools.
 
-+ Projec title: Lorem ipsum dolor sit amet
-+ This project is conducted by [your name]
 
-+ Project summary: [a short summary] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Dependencies
+The raw data needs to be dowloaded from: https://www.kaggle.com/kouroshalizadeh/history-of-philosophy
+and saved as ``data/raw_data.csv``.
 
-Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
+All the library dependencies are listed under 'requirements.txt'. To install all the
+dependencies, simply run ```pip install -r requirements.txt``` at the root
+of the directory.
+
+
+### Structure
+This directory is organized as follows.
 
 ```
 proj/
@@ -24,5 +33,7 @@ proj/
 ├── figs/
 └── output/
 ```
-
 Please see each subfolder for a README file.
+
+Note that each function in ```lib/``` contains docstrings. To understand 
+functionality, simply run ```help(function)``` in any standard Python kernel.

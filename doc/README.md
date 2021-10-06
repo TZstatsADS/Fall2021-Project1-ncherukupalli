@@ -1,5 +1,5 @@
-# ADS Project 1:  R Notebook on the history of philosophy
-
 ### Doc folder
 
-The doc directory contains the report or presentation files. It can have subfolders.  
+The doc directory contains the nc-philosophy-data-story Jupyter Notebook
+which summarizes our analysis. Any larger code/blocks requiring functions
+are referencd from '../lib/'.
